@@ -1,83 +1,60 @@
-FOOD ORDER WEB PROTOTYPE
-========================
+# Restaurant Management
 
-Deskripsi:
-Prototype antarmuka web pemesanan makanan berbasis HTML, CSS, dan JavaScript dengan desain responsive menggunakan pendekatan mobile-first.
+## Deskripsi Project
+Restaurant Management Dashboard adalah website sederhana untuk membantu pengelolaan pesanan restoran secara realtime. Project ini dibuat menggunakan HTML, CSS, dan JavaScript dengan sistem penyimpanan data menggunakan localStorage.
 
-Cara Menjalankan:
-1. Buka folder project menggunakan Visual Studio Code
-2. Pilih file HTML utama
-3. Jalankan menggunakan extension Live Server
+Website terdiri dari beberapa halaman yang saling terhubung untuk membantu proses operasional restoran, mulai dari pengelolaan pesanan, monitoring status pesanan, hingga dashboard ringkasan data.
 
-Alternatif: File HTML juga dapat dibuka langsung melalui browser menggunakan File Explorer
+--------------------------------------------------
 
-Alur Penggunaan Aplikasi
-1. Pengguna membuka halaman Login
-2. Pengguna memilih role:
-- Admin
-- Penjual
-3. Jika belum memiliki akun, pengguna dapat membuka halaman Register
-4. Setelah login:
-- Admin diarahkan ke Dashboard Admin
-- Penjual diarahkan ke Dashboard Penjual
-5. Pengguna dapat mengakses halaman:
-- Dashboard
-- Operasional
-- Pesanan
-- Profile
-6. Pada halaman Operasional, pengguna dapat:
-- Menambah pesanan
+## Fitur Utama
+
+### 1. Dashboard
+- Menampilkan total pesanan secara realtime
+- Menampilkan data status pesanan
+- Sinkronisasi data dari halaman operasional menggunakan localStorage
+
+### 2. Operasional
+- Menambahkan pesanan pelanggan
 - Mengubah status pesanan
-- Melihat total pesanan otomatis
-7. Pada halaman Pesanan, pengguna dapat mencari data pelanggan secara realtime
-8. Pada halaman Profile, pengguna dapat memperbarui data profil dan melakukan simulasi logout
+- Menghapus pesanan
+- Menyimpan data menggunakan localStorage
 
-Fitur UI yang Telah Selesai
+### 3. Pesanan
+- Menampilkan daftar pesanan pelanggan
+- Fitur search realtime berdasarkan nama pelanggan
+- Sinkronisasi data otomatis dari halaman operasional
 
-Login Page
-- Form login
-- Pilihan role pengguna (Admin/Penjual)
-- Show/hide password
-- Responsive layout
+### 4. Responsive Design
+- Tampilan dapat menyesuaikan ukuran layar desktop maupun mobile
+- Menggunakan sidebar desktop dan mobile navbar
 
-Register Page
-- Form registrasi
-- Validasi input
-- Konfirmasi password
-- Show/hide password
-- Responsive layout
+--------------------------------------------------
 
-Dashboard
-- Tampilan dashboard utama
-- Sidebar dan mobile navigation
-- Responsive design
+## Teknologi yang Digunakan
+- HTML
+- CSS
+- JavaScript
+- LocalStorage
 
-Dashboard Admin
-- Tampilan dashboard utama
-- Sidebar dan mobile navigation
-- Responsive design
+--------------------------------------------------
 
-Operasional Page
-- Tambah data pesanan
-- Status pesanan (Proses, Siap, Batal)
-- Manipulasi DOM menggunakan JavaScript
-- Event listener pada tombol aksi
-- Perhitungan total pesanan otomatis
+## Peran Saya
+Sebagai Front-End Developer:
+- Mendesain tampilan website
+- Membuat struktur multi halaman
+- Mengembangkan fitur interaktif menggunakan JavaScript
+- Mengimplementasikan localStorage
+- Membuat responsive layout
 
-Pesanan Page
-- Tabel status pesanan
-- Fitur pencarian pelanggan secara realtime
-- Status badge
+--------------------------------------------------
 
-Profile Page
-- Update profile
-- Show/hide password
-- Simulasi ubah foto
-- Simulasi ganti password
-- Simulasi logout
+## Cara Menjalankan Project
+1. Download atau clone project
+2. Buka folder project
+3. Jalankan file dashboard.html di browser
 
-Responsive Design
-Project menggunakan metode mobile-first dengan media query:
-- Mobile
-- Tablet
-- Desktop
+--------------------------------------------------
+
+## Author
+Maefa Nurdiana Putri
