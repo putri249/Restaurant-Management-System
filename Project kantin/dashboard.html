@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Resto - Prototype</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navigation">
+        <div class="nav-brand desktop-only">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+    <li class="active"><a href="#"><i class="fas fa-home"></i><span>Dashboard</span></a></li>
+    <li><a href="#"><i class="fas fa-utensils"></i><span>Menu Utama</span></a></li>
+    <li><a href="operasional.html"><i class="fas fa-briefcase"></i><span>Operasional</span></a></li>
+    
+    <li><a href="pesanan.html"><i class="fas fa-clipboard-list"></i><span>Pesanan</span></a></li>
+    
+    <li><a href="profile.html"><i class="fas fa-user"></i><span>Profil</span></a></li>
+</ul>
+    </nav>
+
+    <main class="main-layout">
+        <header class="top-header">
+            <button class="burger-btn mobile-only">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h1>DASHBOARD</h1>
+        </header>
+
+        <section class="content-container">
+            <section class="stats-grid">
+                <div class="card stat-card">
+                    <p>Total Pesanan</p>
+                    <h2 class="stat-number" id="totalPesanan">0</h2>
+                    <span class="trend-green">
+                        <i class="fas fa-arrow-trend-up"></i> +12%</span>
+                </div>
+                <div class="card stat-card">                 
+                    <p>Pendapatan <i class="fas fa-coins coin-icon"></i></p>
+                    <div class="income-wrapper">
+                    <h2 class="income-text">Rp 2.450.000</h2>                
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu-section">
+                <h3>Menu Terlaris</h3>
+                <div class="card menu-hero">
+                    <img src="assets/nasi-goreng.png" alt="Nasi Goreng Spesial">
+                    <div class="menu-details">
+                        <h4>Nasi Goreng Spesial</h4>
+                        <p>Rich fried rice with shrimp and toppings.</p>
+                        <span class="order-count">48 Ordered</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="table-section">
+                <h3>Data Pesanan</h3>
+                <div class="card table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nama</th>
+                                <th>Menu</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="order-data">
+                            </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+        <footer class="footer">
+            <p>© 2026 Food Order App</p>
+        </footer>
+    </main>
+
+    <script src="dashboard.js"></script>
+    
+</body>
+</html>

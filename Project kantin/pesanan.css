@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f9fafb;
+    color: #111827;
+}
+
+/* MOBILE NAVBAR */
+.mobile-navbar {
+    width: 100%;
+    height: 75px;
+    background: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #e5e7eb;
+    z-index: 100;
+}
+
+.mobile-navbar a {
+    color: #000;
+    font-size: 22px;
+}
+
+.mobile-navbar .active-mobile {
+    color: #004080;
+}
+
+/* SIDEBAR */
+.sidebar {
+    display: none;
+}
+
+/* MAIN */
+.main-content {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+/* HEADER */
+.top-header {
+    width: 100%;
+    height: 72px;
+    background: #004080;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #64748B;
+}
+
+.header-left {
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+}
+
+.top-header h1 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* CONTENT CONTAINER */
+.status-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 16px;
+}
+
+/* SEARCH BAR STYLE (Sesuai Figma Oval) */
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; /* Tengah secara default di mobile */
+}
+
+.search-container input {
+    width: 100%;
+    height: 54px;
+    padding: 0 20px 0 55px;
+    border: 1px solid #e5e7eb;
+    border-radius: 999px; /* Membuat lonjong bulat sempurna */
+    font-size: 15px;
+    outline: none;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+    border-color: #004080;
+    box-shadow: 0 4px 15px rgba(0, 64, 128, 0.08);
+}
+
+.search-icon {
+    position: absolute; 
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%); /*ikon di tengah*/
+    color: #9ca3af;
+    font-size: 18px;
+}
+
+/* DATA CARD */
+.table-card {
+    background: white;
+    border-radius: 22px;
+    padding: 22px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.table-card h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* TABLE STYLING */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    table-layout: fixed;
+}
+
+thead {
+    background: #f3f4f6;
+}
+
+th {
+    background: #F0F2F4; 
+    padding: 14px; 
+    font-size: 14px; 
+    border: 1px solid #ddd; 
+    text-align: center;
+    vertical-align: middle;
+    width: 33.33%;
+}
+
+/* Kolom pertama kasih padding kiri lebih dalam */
+th:first-child, td:first-child {
+    padding-left: 24px;
+}
+
+td {
+    padding: 14px; 
+    border: 1px solid #ddd; 
+    font-size: 14px; 
+    text-align: center;
+    vertical-align: middle;
+    /* 3. Antisipasi kalau ada teks kepanjangan agar otomatis turun ke bawah */
+    word-wrap: break-word; 
+    white-space: normal;
+}
+
+/* BADGES STATUS */
+.badge {
+    padding: 6px 18px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge.proses {
+    background: #fef9c3; 
+    color: #854d0e;
+}
+
+.badge.selesai {
+    background: #E8FCF2;
+    color: #166534;
+}
+
+.badge.batal {
+    background: #fee2e2; 
+    color: #991b1b;
+}
+
+/* MEDIA QUERIES TABLET */
+@media (min-width: 768px) {
+    .status-content {
+        padding: 0 30px;
+    }
+    .table-card {
+        padding: 28px;
+    }
+}
+
+/* MEDIA QUERIES DESKTOP */
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+    }
+
+    .sidebar {
+        width: 260px;
+        height: 100vh;
+        background: white;
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: block;
+        border-right: 1px solid #ddd;
+    }
+
+    .desktop-only {
+        display: block;
+        padding: 30px;
+        font-size: 24px;
+        color: #004080;
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: #000;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 18px 30px;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    .menu li.active a {
+        background: #f0f7ff;
+        color: #004080;
+        border-right: 4px solid #004080;
+    }
+
+    .mobile-navbar {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 260px;
+        width: calc(100% - 260px);
+    }
+
+    .top-header {
+        height: 80px;
+        background: #004080;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .header-left {
+        display: none;
+    }
+
+    .status-content {
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .search-container {
+        margin: 0 0 0 auto;
+        width: 380px;
+    }
+    
+    table {
+        min-width: 100%;
+    }
+}

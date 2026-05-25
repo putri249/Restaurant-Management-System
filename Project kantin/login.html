@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="login-container">
+        <section class="login-image">
+            <img src="assets/login-food.png" alt="Food">
+            <div class="overlay">
+                <h1>
+                    SUDAH RINDU <br>
+                    DENGAN <br>
+                    MASAKAN KAMI?
+                </h1>
+                <p>
+                    Selamat datang kembali! <br>
+                    Silahkan masuk ke akun anda
+                </p>
+            </div>
+        </section>
+
+        <section class="login-form-section">
+            <h2>LOGIN</h2>
+            <form class="login-form">
+                <input type="email" placeholder="Email" required> 
+                <div class="password-wrapper">
+                    <input type="password" placeholder="Password" id="password" required>
+                    <i class="fa-regular fa-eye" id="togglePassword"></i>
+                </div>
+
+                <a href="#" class="forgot-password">
+                    Lupa Password?
+                </a>
+
+                <div class="role-selection">
+                    <label class="role-option">
+                        <input type="radio" name="role" value="penjual" checked>
+                        <span>Penjual</span>
+                    </label>
+
+                    <label class="role-option">
+                        <input type="radio" name="role" value="admin">
+                        <span>Admin</span>
+                    </label>
+
+                </div>
+
+                <button type="submit">Login</button>
+                <p class="register-text" id="registerText">
+                    Belum punya akun?
+                    <a href="register.html">Register</a>
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Food Order App</p>
+    </footer>
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="profile.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="desktop-only">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fas fa-home"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fas fa-utensils"></i>
+                        <span>Menu Utama</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="operasional.html">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Operasional</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pesanan.html">
+                        <i class="fas fa-clipboard-list"></i>
+                        <span>Pesanan</span>
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="profile.html">
+                        <i class="fas fa-user"></i>
+                        <span>Profil</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <!-- HEADER -->
+        <header class="top-header">
+            <div class="header-left">
+                <i class="fas fa-bars"></i>
+            </div>
+            <h1>PROFILE</h1>
+        </header>
+
+        <!-- PROFILE CONTENT -->
+        <section class="profile-content">
+            <div class="profile-card">
+                <!-- PHOTO -->
+                <div class="profile-image-section">
+                    <div class="profile-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <button class="change-photo-btn">
+                        Ubah Foto Profil
+                    </button>
+                </div>
+
+                <!-- FORM -->
+                <form class="profile-form">
+                    <!-- NAMA -->
+                    <div class="input-group">
+                        <label for="nama">
+                            Nama Lengkap
+                        </label>
+                        <input type="text" id="nama" value="Budi Santoso">
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="input-group">
+                        <label for="email">
+                            Email Anda
+                        </label>
+                        <input type="email" id="email" value="budi.santoso@email.com">
+                    </div>
+
+                    <!-- PASSWORD -->
+                    <div class="input-group password-group">
+                        <label for="password">
+                            Kata Sandi Baru
+                        </label>
+                        <div class="password-wrapper">
+                            <input type="password" id="password" value="123456789">
+                            <button type="button" class="eye-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- BUTTON -->
+                    <button type="submit" class="submit-btn">
+                        Update Profile
+                    </button>
+                </form>
+
+                <!-- ACTION -->
+                <div class="profile-actions">
+                    <button class="change-password-btn">
+                        Ganti Kata Sandi
+                    </button>
+                    <button class="logout-btn">
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>© 2026 Food Order App</p>
+        </footer>
+    </main>
+
+
+    <!-- MOBILE NAVBAR -->
+    <nav class="mobile-navbar">
+        <a href="dashboard.html">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-utensils"></i>
+        </a>
+        <a href="operasional.html">
+            <i class="fa-solid fa-briefcase"></i>
+        </a>
+        <a href="pesanan.html">
+            <i class="fas fa-clipboard-list"></i>
+        </a>
+        <a href="profile.html" class="active-mobile">
+            <i class="fa-solid fa-user"></i>
+        </a>
+    </nav>
+
+    <!-- JS -->
+    <script src="profile.js"></script>
+</body>
+
+</html>
